@@ -1,0 +1,88 @@
+Fri Jan 18 15:56:29 PST 2019
+*** Compiling
+*** cpplint
+Done processing main.cpp
+Done processing turtleprogramcatch.cpp
+Done processing turtleprogram.cpp
+Done processing turtleprogram.h
+*** cppcheck
+Checking main.cpp...
+1/4 files checked 14% done
+Checking turtleprogram.cpp...
+2/4 files checked 65% done
+Checking turtleprogram.h...
+3/4 files checked 77% done
+Checking turtleprogramcatch.cpp...
+4/4 files checked 100% done
+*** running
+Constructor, getLength, setIndex, getIndex Pass
+Ostream function had Pass
+Math Operator function Pass
+Equaliy Test had Pass
+All Test Pass
+***Finish Assert***
+** Just Display Output Turtle Output ***
+tp1: []
+tp2: [F 10]
+tp1 now as tp2+tp3: [F 10 R 90]
+tp1 now as tp2 * 3: [F 10 F 10 F 10]
+tp4 is a copy of tp1: [F 10 F 10 F 10]
+tp5: [F 10]
+tp2 and tp5 are == true
+tp2 and tp3 are != true
+index 0 of tp2 is F
+tp2 after 2 calls to setIndex: [R 90]
+tp2 and tp3 are == true
+Tp10: [E]
+Tp11: [E]
+Super Tp1: [F 10 F 10 F 10 F 10 F 10 F 10]
+tp12: [C 10 C 10]
+tp12: [C 10 C 10 C 10 C 10 C 10 C 10 C 10 C 10]
+Done
+*** running with valgrind
+==21074== Memcheck, a memory error detector
+==21074== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==21074== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==21074== Command: ./myprogram.exe
+==21074== 
+Constructor, getLength, setIndex, getIndex Pass
+Ostream function had Pass
+Math Operator function Pass
+Equaliy Test had Pass
+All Test Pass
+***Finish Assert***
+** Just Display Output Turtle Output ***
+tp1: []
+tp2: [F 10]
+tp1 now as tp2+tp3: [F 10 R 90]
+tp1 now as tp2 * 3: [F 10 F 10 F 10]
+tp4 is a copy of tp1: [F 10 F 10 F 10]
+tp5: [F 10]
+tp2 and tp5 are == true
+tp2 and tp3 are != true
+index 0 of tp2 is F
+tp2 after 2 calls to setIndex: [R 90]
+tp2 and tp3 are == true
+Tp10: [E]
+Tp11: [E]
+Super Tp1: [F 10 F 10 F 10 F 10 F 10 F 10]
+tp12: [C 10 C 10]
+tp12: [C 10 C 10 C 10 C 10 C 10 C 10 C 10 C 10]
+Done
+==21074== 
+==21074== HEAP SUMMARY:
+==21074==     in use at exit: 72,704 bytes in 1 blocks
+==21074==   total heap usage: 76 allocs, 75 frees, 88,265 bytes allocated
+==21074== 
+==21074== LEAK SUMMARY:
+==21074==    definitely lost: 0 bytes in 0 blocks
+==21074==    indirectly lost: 0 bytes in 0 blocks
+==21074==      possibly lost: 0 bytes in 0 blocks
+==21074==    still reachable: 72,704 bytes in 1 blocks
+==21074==         suppressed: 0 bytes in 0 blocks
+==21074== Rerun with --leak-check=full to see details of leaked memory
+==21074== 
+==21074== For counts of detected and suppressed errors, rerun with: -v
+==21074== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+*** cleaning up
+Fri Jan 18 15:56:31 PST 2019

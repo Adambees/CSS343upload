@@ -1,0 +1,33 @@
+# Travis.ci file https://docs.travis-ci.com/user/tutorial/
+# Continous integration
+
+# Login to https://travis-ci.com/ using your github credentials
+# Add this repository to travis
+# Every time there is a commit, this script will be run and result emailed
+# GitHub Location for this repo: https://github.com/2018WI343
+# Travis Runs for this repo: https://travis-ci.com/2018WI343
+
+language: cpp
+
+dist: xenial
+
+before_install:
+  - sudo apt-get install valgrind
+  - sudo apt-get install cppcheck
+  - sudo -H pip install cpplint
+  - uname -a
+  - cppcheck --version
+  - pip show cpplint
+  - g++ --version
+  - valgrind --version
+
+
+script:
+    - cpplint *.cpp *.hpp
+    - cppcheck --enable=all --force --inconclusive --language=c++ --suppress=missingIncludeSystem *.cpp *.h
+    - cmake CMakeLists.txt
+    - make
+    - ./graph
+    - valgrind ./graph
+    - echo "done!"
+

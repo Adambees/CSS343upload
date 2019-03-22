@@ -1,0 +1,477 @@
+Wed Mar 13 23:38:16 PDT 2019
+*** Compiling
+history.cpp:25:76: warning: unused parameter ‘mi’ [-Wunused-parameter]
+ void History::doTransaction(string s, ManageCustomer& mc, ManageInventory& mi) {
+                                                                            ^
+inventory.cpp:24:38: warning: unused parameter ‘s’ [-Wunused-parameter]
+ void Inventory::doTransaction(string s, ManageCustomer& mc,
+                                      ^
+inventory.cpp:24:57: warning: unused parameter ‘mc’ [-Wunused-parameter]
+ void Inventory::doTransaction(string s, ManageCustomer& mc,
+                                                         ^
+transaction.cpp:18:40: warning: unused parameter ‘s’ [-Wunused-parameter]
+ void Transaction::doTransaction(string s, ManageCustomer& mc,
+                                        ^
+transaction.cpp:18:59: warning: unused parameter ‘mc’ [-Wunused-parameter]
+ void Transaction::doTransaction(string s, ManageCustomer& mc,
+                                                           ^
+transaction.cpp:19:18: warning: unused parameter ‘mi’ [-Wunused-parameter]
+ ManageInventory& mi) {}
+                  ^
+*** cpplint
+Done processing borrow.cpp
+BSTree.cpp:None:  BSTree.cpp should include its header file BSTree.h  [build/include] [5]
+Done processing BSTree.cpp
+Done processing classic.cpp
+Done processing comedy.cpp
+commandRunner.cpp:None:  commandRunner.cpp should include its header file commandRunner.h  [build/include] [5]
+Done processing commandRunner.cpp
+Done processing customer.cpp
+Done processing drama.cpp
+hashTable.cpp:None:  hashTable.cpp should include its header file hashTable.h  [build/include] [5]
+Done processing hashTable.cpp
+Done processing history.cpp
+Done processing inventory.cpp
+Done processing main.cpp
+manageCustomer.cpp:None:  manageCustomer.cpp should include its header file manageCustomer.h  [build/include] [5]
+Done processing manageCustomer.cpp
+manageInventory.cpp:None:  manageInventory.cpp should include its header file manageInventory.h  [build/include] [5]
+Done processing manageInventory.cpp
+Done processing movie.cpp
+movieMaker.cpp:19:  Using C-style cast.  Use reinterpret_cast<Movie*>(...) instead  [readability/casting] [4]
+movieMaker.cpp:23:  Using C-style cast.  Use reinterpret_cast<Movie*>(...) instead  [readability/casting] [4]
+movieMaker.cpp:27:  Using C-style cast.  Use reinterpret_cast<Movie*>(...) instead  [readability/casting] [4]
+movieMaker.cpp:None:  movieMaker.cpp should include its header file movieMaker.h  [build/include] [5]
+Done processing movieMaker.cpp
+Done processing return.cpp
+runTransaction.cpp:None:  runTransaction.cpp should include its header file runTransaction.h  [build/include] [5]
+Done processing runTransaction.cpp
+storeManager.cpp:None:  storeManager.cpp should include its header file storeManager.h  [build/include] [5]
+Done processing storeManager.cpp
+Done processing store_test.cpp
+Done processing transaction.cpp
+Skipping input '*.hpp': Can't open for reading
+Total errors found: 11
+*** cppcheck
+Checking BSTree.cpp...
+1/20 files checked 8% done
+Checking borrow.cpp...
+[borrow.cpp:71]: (style) The scope of the variable 'movie_T' can be reduced.
+[borrow.cpp:74]: (style) The scope of the variable 'yr' can be reduced.
+[borrow.cpp:75]: (style) The scope of the variable 'month' can be reduced.
+[borrow.cpp:76]: (style) The scope of the variable 'm' can be reduced.
+[borrow.cpp:77]: (style) The scope of the variable 'temp' can be reduced.
+2/20 files checked 17% done
+Checking classic.cpp...
+[classic.cpp:83]: (style) C-style pointer casting
+[classic.cpp:94]: (style) C-style pointer casting
+[classic.cpp:18]: (performance) Variable 'mainActor' is assigned in constructor body. Consider performing initialization in initialization list.
+3/20 files checked 23% done
+Checking comedy.cpp...
+[comedy.cpp:51]: (style) C-style pointer casting
+[comedy.cpp:60]: (style) C-style pointer casting
+4/20 files checked 27% done
+Checking commandRunner.cpp...
+5/20 files checked 34% done
+Checking customer.cpp...
+[customer.cpp:11]: (warning) Member variable 'Customer::customer_ID' is not initialized in the constructor.
+[customer.cpp:11]: (warning) Member variable 'Customer::front' is not initialized in the constructor.
+[customer.cpp:11]: (warning) Member variable 'Customer::tFront' is not initialized in the constructor.
+[customer.cpp:20]: (performance) Variable 'last' is assigned in constructor body. Consider performing initialization in initialization list.
+[customer.cpp:21]: (performance) Variable 'first' is assigned in constructor body. Consider performing initialization in initialization list.
+[customer.cpp:139] -> [customer.h:40]: (style, inconclusive) Technically the member function 'Customer::getCustomerData' can be const.
+6/20 files checked 46% done
+Checking drama.cpp...
+[drama.cpp:53]: (style) C-style pointer casting
+[drama.cpp:60]: (style) C-style pointer casting
+7/20 files checked 51% done
+Checking hashTable.cpp...
+8/20 files checked 58% done
+Checking history.cpp...
+9/20 files checked 60% done
+Checking inventory.cpp...
+10/20 files checked 62% done
+Checking main.cpp...
+11/20 files checked 63% done
+Checking manageCustomer.cpp...
+12/20 files checked 66% done
+Checking manageInventory.cpp...
+13/20 files checked 73% done
+Checking movie.cpp...
+[movie.cpp:15]: (performance) Variable 'director' is assigned in constructor body. Consider performing initialization in initialization list.
+[movie.cpp:16]: (performance) Variable 'title' is assigned in constructor body. Consider performing initialization in initialization list.
+14/20 files checked 77% done
+Checking movieMaker.cpp...
+[movieMaker.cpp:19]: (style) C-style pointer casting
+[movieMaker.cpp:23]: (style) C-style pointer casting
+[movieMaker.cpp:27]: (style) C-style pointer casting
+15/20 files checked 79% done
+Checking return.cpp...
+[return.cpp:82]: (style) The scope of the variable 'movie_T' can be reduced.
+[return.cpp:86]: (style) The scope of the variable 'yr' can be reduced.
+[return.cpp:87]: (style) The scope of the variable 'month' can be reduced.
+[return.cpp:89]: (style) The scope of the variable 'm' can be reduced.
+[return.cpp:91]: (style) The scope of the variable 'temp' can be reduced.
+16/20 files checked 89% done
+Checking runTransaction.cpp...
+17/20 files checked 91% done
+Checking storeManager.cpp...
+18/20 files checked 93% done
+Checking store_test.cpp...
+19/20 files checked 97% done
+Checking transaction.cpp...
+[transaction.cpp:11]: (performance) Variable 'errors' is assigned in constructor body. Consider performing initialization in initialization list.
+[transaction.cpp:25] -> [transaction.h:36]: (style, inconclusive) Technically the member function 'Transaction::showErrors' can be const.
+20/20 files checked 100% done
+*** running
+Start testStore1
+End testStore1
+
+Start testStore2
+End testStore2
+
+=====================================
+Start testStoreFinal
+
+Invalid Movie Report
+
+Z, 10, Hal Ashby, Harold and Maude, Bud Cort 3 1971
+Z, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
+
+
+Comedies 
+TYPE | Stock | Director | Title | Year
+F, 10,  Woody Allen,  Annie Hall, 1977
+F, 10,  Joel Coen,  Fargo, 1996
+F, 10,  John Landis,  National Lampoon's Animal House, 1978
+F, 10,  Different Years,  Pirates of the Caribbean, 2000
+F, 10,  Gore Verbinski,  Pirates of the Caribbean, 2003
+F, 10,  Nora Ephron,  Sleepless in Seattle, 1993
+F, 10,  Rob Reiner,  When Harry Met Sally, 1989
+F, 10,  Nora Ephron,  You've Got Mail, 1998
+
+Dramas 
+TYPE | Stock | Director | Title | Year
+D, 10,  Barry Levinson,  Good Morning Vietnam, 1988
+D, 10,  Barry Levinson,  Same Director Good Morning Vietnam, 1988
+D, 10,  Clint Eastwood,  Unforgiven, 1992
+D, 10,  Gus Van Sant,  Good Will Hunting, 2000
+D, 10,  Jonathan Demme,  Silence of the Lambs, 1991
+D, 10,  Nancy Savoca,  Dogfight, 1991
+D, 10,  Phillippe De Broca,  King of Hearts, 1967
+D, 10,  Steven Spielberg,  Schindler's List, 1993
+
+Classics 
+TYPE | Stock | Director | Title | Main Actor| Month | Year
+C, 10,  George Cukor,  Holiday, Cary Grant, 9, 1938
+C, 10,  George Cukor,  Holiday, Katherine Hepburn, 9, 1938
+C, 10,  Victor Fleming,  Gone With the Wind, Clark Gable, 2, 1939
+C, 10,  Victor Fleming,  Gone With the Wind, Vivien Leigh, 2, 1939
+C, 10,  Victor Fleming,  The Wizard of Oz, Judy Garland, 7, 1939
+C, 10,  George Cukor,  The Philadelphia Story, Cary Grant, 5, 1940
+C, 10,  George Cukor,  The Philadelphia Story, Katherine Hepburn, 5, 1940
+C, 10,  John Huston,  The Maltese Falcon, Humphrey Bogart, 10, 1941
+C, 10,  Michael Curtiz,  Casablanca, Humphrey Bogart, 8, 1942
+C, 10,  Michael Curtiz,  Casablanca, Ingrid Bergman, 8, 1942
+C, 10,  Frank Capra,  It's a Wonderful Life, Donna Reed, 11, 1946
+C, 10,  Frank Capra,  It's a Wonderful Life, James Steward, 11, 1946
+C, 10,  Stanley Kubrick,  A Clockwork Orange, Malcolm McDowell, 2, 1971
+C, 10,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+
+
+
+
+History of Customer ID: 1000 (Mouse Minnie)
+
+
+History of Customer ID: 5000 (Frog Freddie)
+
+
+History of Customer ID: 8000 (Wacky Wally)
+
+
+Comedies 
+TYPE | Stock | Director | Title | Year
+F, 9,  Woody Allen,  Annie Hall, 1977
+F, 9,  Joel Coen,  Fargo, 1996
+F, 9,  John Landis,  National Lampoon's Animal House, 1978
+F, 10,  Different Years,  Pirates of the Caribbean, 2000
+F, 10,  Gore Verbinski,  Pirates of the Caribbean, 2003
+F, 9,  Nora Ephron,  Sleepless in Seattle, 1993
+F, 9,  Rob Reiner,  When Harry Met Sally, 1989
+F, 9,  Nora Ephron,  You've Got Mail, 1998
+
+Dramas 
+TYPE | Stock | Director | Title | Year
+D, 9,  Barry Levinson,  Good Morning Vietnam, 1988
+D, 10,  Barry Levinson,  Same Director Good Morning Vietnam, 1988
+D, 9,  Clint Eastwood,  Unforgiven, 1992
+D, 9,  Gus Van Sant,  Good Will Hunting, 2000
+D, 9,  Jonathan Demme,  Silence of the Lambs, 1991
+D, 8,  Nancy Savoca,  Dogfight, 1991
+D, 9,  Phillippe De Broca,  King of Hearts, 1967
+D, 9,  Steven Spielberg,  Schindler's List, 1993
+
+Classics 
+TYPE | Stock | Director | Title | Main Actor| Month | Year
+C, 9,  George Cukor,  Holiday, Cary Grant, 9, 1938
+C, 10,  George Cukor,  Holiday, Katherine Hepburn, 9, 1938
+C, 10,  Victor Fleming,  Gone With the Wind, Clark Gable, 2, 1939
+C, 10,  Victor Fleming,  Gone With the Wind, Vivien Leigh, 2, 1939
+C, 10,  Victor Fleming,  The Wizard of Oz, Judy Garland, 7, 1939
+C, 9,  George Cukor,  The Philadelphia Story, Cary Grant, 5, 1940
+C, 9,  George Cukor,  The Philadelphia Story, Katherine Hepburn, 5, 1940
+C, 9,  John Huston,  The Maltese Falcon, Humphrey Bogart, 10, 1941
+C, 10,  Michael Curtiz,  Casablanca, Humphrey Bogart, 8, 1942
+C, 10,  Michael Curtiz,  Casablanca, Ingrid Bergman, 8, 1942
+C, 10,  Frank Capra,  It's a Wonderful Life, Donna Reed, 11, 1946
+C, 10,  Frank Capra,  It's a Wonderful Life, James Steward, 11, 1946
+C, 9,  Stanley Kubrick,  A Clockwork Orange, Malcolm McDowell, 2, 1971
+C, 0,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+
+
+
+
+History of Customer ID: 1000 (Mouse Minnie)
+B, 1000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+B, 1000, D, C,  George Cukor,  The Philadelphia Story, Cary Grant, 5, 1940
+B, 1000, D, D,  Gus Van Sant,  Good Will Hunting, 2000
+B, 1000, D, C,  George Cukor,  The Philadelphia Story, Katherine Hepburn, 5, 1940
+B, 1000, D, D,  Barry Levinson,  Good Morning Vietnam, 1988
+
+
+History of Customer ID: 1111 (Mouse Mickey)
+B, 1111, D, C,  George Cukor,  Holiday, Cary Grant, 9, 1938
+B, 1111, D, C,  John Huston,  The Maltese Falcon, Humphrey Bogart, 10, 1941
+B, 1111, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+B, 1111, D, C,  Stanley Kubrick,  A Clockwork Orange, Malcolm McDowell, 2, 1971
+
+
+History of Customer ID: 5000 (Frog Freddie)
+B, 5000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+R, 5000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+B, 5000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+R, 5000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+B, 5000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+R, 5000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+B, 5000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+
+
+History of Customer ID: 8000 (Wacky Wally)
+B, 8000, D, F,  National Lampoon's Animal House,  John Landis, 1978
+B, 8000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+B, 8000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+R, 8000, D, F,  You've Got Mail,  Nora Ephron, 1998
+B, 8000, D, F,  You've Got Mail,  Nora Ephron, 1998
+
+
+History of Customer ID: 8888 (Pig Porky)
+B, 8888, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+B, 8888, D, D,  Nancy Savoca,  Dogfight, 1991
+B, 8888, D, D,  Jonathan Demme,  Silence of the Lambs, 1991
+B, 8888, D, F,  When Harry Met Sally,  Rob Reiner, 1989
+B, 8888, D, F,  Annie Hall,  Woody Allen, 1977
+
+
+ERROR Report
+Warning: Invalid Movie type: Z 2 1971 Malcolm McDowell
+Warning: Invalid Command type: X
+Warning: Invalid Command type: Z
+Warning: Invalid Customer ID: 1234
+Warning: Invalid Borrow D, F,  Bogus Title, , 2001 [NO SUCH MOVIE IN THE STORE]
+Warning: Invalid Media type: Z F Fargo, 1996
+Warning: Invalid Borrow Customer ID: 9000 (Lizard Larry) D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971 [OUT OF STOCK]
+Warning: Invalid Borrow Customer ID: 3333 (Witch Wicked) D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971 [OUT OF STOCK]
+Warning: Invalid Borrow Customer ID: 7777 (Spider Sammy) D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971 [OUT OF STOCK]
+Warning: Invalid Borrow D, D,  Steven Spielberg,  Bogus Title, 0 [NO SUCH MOVIE IN THE STORE]
+
+End testStoreFinal
+=====================================
+Done.
+*** running with valgrind
+==4906== Memcheck, a memory error detector
+==4906== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==4906== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==4906== Command: ./myprogram.exe
+==4906== 
+Start testStore1
+End testStore1
+
+Start testStore2
+End testStore2
+
+=====================================
+Start testStoreFinal
+
+Invalid Movie Report
+
+Z, 10, Hal Ashby, Harold and Maude, Bud Cort 3 1971
+Z, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
+
+
+Comedies 
+TYPE | Stock | Director | Title | Year
+F, 10,  Woody Allen,  Annie Hall, 1977
+F, 10,  Joel Coen,  Fargo, 1996
+F, 10,  John Landis,  National Lampoon's Animal House, 1978
+F, 10,  Different Years,  Pirates of the Caribbean, 2000
+F, 10,  Gore Verbinski,  Pirates of the Caribbean, 2003
+F, 10,  Nora Ephron,  Sleepless in Seattle, 1993
+F, 10,  Rob Reiner,  When Harry Met Sally, 1989
+F, 10,  Nora Ephron,  You've Got Mail, 1998
+
+Dramas 
+TYPE | Stock | Director | Title | Year
+D, 10,  Barry Levinson,  Good Morning Vietnam, 1988
+D, 10,  Barry Levinson,  Same Director Good Morning Vietnam, 1988
+D, 10,  Clint Eastwood,  Unforgiven, 1992
+D, 10,  Gus Van Sant,  Good Will Hunting, 2000
+D, 10,  Jonathan Demme,  Silence of the Lambs, 1991
+D, 10,  Nancy Savoca,  Dogfight, 1991
+D, 10,  Phillippe De Broca,  King of Hearts, 1967
+D, 10,  Steven Spielberg,  Schindler's List, 1993
+
+Classics 
+TYPE | Stock | Director | Title | Main Actor| Month | Year
+C, 10,  George Cukor,  Holiday, Cary Grant, 9, 1938
+C, 10,  George Cukor,  Holiday, Katherine Hepburn, 9, 1938
+C, 10,  Victor Fleming,  Gone With the Wind, Clark Gable, 2, 1939
+C, 10,  Victor Fleming,  Gone With the Wind, Vivien Leigh, 2, 1939
+C, 10,  Victor Fleming,  The Wizard of Oz, Judy Garland, 7, 1939
+C, 10,  George Cukor,  The Philadelphia Story, Cary Grant, 5, 1940
+C, 10,  George Cukor,  The Philadelphia Story, Katherine Hepburn, 5, 1940
+C, 10,  John Huston,  The Maltese Falcon, Humphrey Bogart, 10, 1941
+C, 10,  Michael Curtiz,  Casablanca, Humphrey Bogart, 8, 1942
+C, 10,  Michael Curtiz,  Casablanca, Ingrid Bergman, 8, 1942
+C, 10,  Frank Capra,  It's a Wonderful Life, Donna Reed, 11, 1946
+C, 10,  Frank Capra,  It's a Wonderful Life, James Steward, 11, 1946
+C, 10,  Stanley Kubrick,  A Clockwork Orange, Malcolm McDowell, 2, 1971
+C, 10,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+
+
+
+
+History of Customer ID: 1000 (Mouse Minnie)
+
+
+History of Customer ID: 5000 (Frog Freddie)
+
+
+History of Customer ID: 8000 (Wacky Wally)
+
+
+Comedies 
+TYPE | Stock | Director | Title | Year
+F, 9,  Woody Allen,  Annie Hall, 1977
+F, 9,  Joel Coen,  Fargo, 1996
+F, 9,  John Landis,  National Lampoon's Animal House, 1978
+F, 10,  Different Years,  Pirates of the Caribbean, 2000
+F, 10,  Gore Verbinski,  Pirates of the Caribbean, 2003
+F, 9,  Nora Ephron,  Sleepless in Seattle, 1993
+F, 9,  Rob Reiner,  When Harry Met Sally, 1989
+F, 9,  Nora Ephron,  You've Got Mail, 1998
+
+Dramas 
+TYPE | Stock | Director | Title | Year
+D, 9,  Barry Levinson,  Good Morning Vietnam, 1988
+D, 10,  Barry Levinson,  Same Director Good Morning Vietnam, 1988
+D, 9,  Clint Eastwood,  Unforgiven, 1992
+D, 9,  Gus Van Sant,  Good Will Hunting, 2000
+D, 9,  Jonathan Demme,  Silence of the Lambs, 1991
+D, 8,  Nancy Savoca,  Dogfight, 1991
+D, 9,  Phillippe De Broca,  King of Hearts, 1967
+D, 9,  Steven Spielberg,  Schindler's List, 1993
+
+Classics 
+TYPE | Stock | Director | Title | Main Actor| Month | Year
+C, 9,  George Cukor,  Holiday, Cary Grant, 9, 1938
+C, 10,  George Cukor,  Holiday, Katherine Hepburn, 9, 1938
+C, 10,  Victor Fleming,  Gone With the Wind, Clark Gable, 2, 1939
+C, 10,  Victor Fleming,  Gone With the Wind, Vivien Leigh, 2, 1939
+C, 10,  Victor Fleming,  The Wizard of Oz, Judy Garland, 7, 1939
+C, 9,  George Cukor,  The Philadelphia Story, Cary Grant, 5, 1940
+C, 9,  George Cukor,  The Philadelphia Story, Katherine Hepburn, 5, 1940
+C, 9,  John Huston,  The Maltese Falcon, Humphrey Bogart, 10, 1941
+C, 10,  Michael Curtiz,  Casablanca, Humphrey Bogart, 8, 1942
+C, 10,  Michael Curtiz,  Casablanca, Ingrid Bergman, 8, 1942
+C, 10,  Frank Capra,  It's a Wonderful Life, Donna Reed, 11, 1946
+C, 10,  Frank Capra,  It's a Wonderful Life, James Steward, 11, 1946
+C, 9,  Stanley Kubrick,  A Clockwork Orange, Malcolm McDowell, 2, 1971
+C, 0,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+
+
+
+
+History of Customer ID: 1000 (Mouse Minnie)
+B, 1000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+B, 1000, D, C,  George Cukor,  The Philadelphia Story, Cary Grant, 5, 1940
+B, 1000, D, D,  Gus Van Sant,  Good Will Hunting, 2000
+B, 1000, D, C,  George Cukor,  The Philadelphia Story, Katherine Hepburn, 5, 1940
+B, 1000, D, D,  Barry Levinson,  Good Morning Vietnam, 1988
+
+
+History of Customer ID: 1111 (Mouse Mickey)
+B, 1111, D, C,  George Cukor,  Holiday, Cary Grant, 9, 1938
+B, 1111, D, C,  John Huston,  The Maltese Falcon, Humphrey Bogart, 10, 1941
+B, 1111, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+B, 1111, D, C,  Stanley Kubrick,  A Clockwork Orange, Malcolm McDowell, 2, 1971
+
+
+History of Customer ID: 5000 (Frog Freddie)
+B, 5000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+R, 5000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+B, 5000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+R, 5000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+B, 5000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+R, 5000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+B, 5000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+
+
+History of Customer ID: 8000 (Wacky Wally)
+B, 8000, D, F,  National Lampoon's Animal House,  John Landis, 1978
+B, 8000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+B, 8000, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+R, 8000, D, F,  You've Got Mail,  Nora Ephron, 1998
+B, 8000, D, F,  You've Got Mail,  Nora Ephron, 1998
+
+
+History of Customer ID: 8888 (Pig Porky)
+B, 8888, D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971
+B, 8888, D, D,  Nancy Savoca,  Dogfight, 1991
+B, 8888, D, D,  Jonathan Demme,  Silence of the Lambs, 1991
+B, 8888, D, F,  When Harry Met Sally,  Rob Reiner, 1989
+B, 8888, D, F,  Annie Hall,  Woody Allen, 1977
+
+
+ERROR Report
+Warning: Invalid Movie type: Z 2 1971 Malcolm McDowell
+Warning: Invalid Command type: X
+Warning: Invalid Command type: Z
+Warning: Invalid Customer ID: 1234
+Warning: Invalid Borrow D, F,  Bogus Title, , 2001 [NO SUCH MOVIE IN THE STORE]
+Warning: Invalid Media type: Z F Fargo, 1996
+Warning: Invalid Borrow Customer ID: 9000 (Lizard Larry) D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971 [OUT OF STOCK]
+Warning: Invalid Borrow Customer ID: 3333 (Witch Wicked) D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971 [OUT OF STOCK]
+Warning: Invalid Borrow Customer ID: 7777 (Spider Sammy) D, C,  Hal Ashby,  Harold and Maude, Ruth Gordon, 3, 1971 [OUT OF STOCK]
+Warning: Invalid Borrow D, D,  Steven Spielberg,  Bogus Title, 0 [NO SUCH MOVIE IN THE STORE]
+
+End testStoreFinal
+=====================================
+Done.
+==4906== 
+==4906== HEAP SUMMARY:
+==4906==     in use at exit: 72,704 bytes in 1 blocks
+==4906==   total heap usage: 919 allocs, 918 frees, 278,284 bytes allocated
+==4906== 
+==4906== LEAK SUMMARY:
+==4906==    definitely lost: 0 bytes in 0 blocks
+==4906==    indirectly lost: 0 bytes in 0 blocks
+==4906==      possibly lost: 0 bytes in 0 blocks
+==4906==    still reachable: 72,704 bytes in 1 blocks
+==4906==         suppressed: 0 bytes in 0 blocks
+==4906== Rerun with --leak-check=full to see details of leaked memory
+==4906== 
+==4906== For counts of detected and suppressed errors, rerun with: -v
+==4906== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+*** cleaning up
+Wed Mar 13 23:38:23 PDT 2019
